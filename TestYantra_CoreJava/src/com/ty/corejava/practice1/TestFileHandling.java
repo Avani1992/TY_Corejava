@@ -33,7 +33,7 @@ public class TestFileHandling {
 			System.out.println("Data updated successfully...");
 			
 			System.out.print("Updated data= ");
-			int j;
+			int j=0;
 			while((j=fr.read())!=-1)
 			{
 				System.out.print((char)j);
