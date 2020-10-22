@@ -1,0 +1,112 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<context-param>
+		<param-name>User</param-name>
+		<param-value>Root</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.FirstServlet</servlet-class>
+		<init-param>
+			<param-name>First</param-name>
+			<param-value>Servlet</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Loginform</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.LoginForm</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Loginform</servlet-name>
+		<url-pattern>/loginform</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>createCookie</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.CreateCookie</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createCookie</servlet-name>
+		<url-pattern>/create-cookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>getCookie</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.GetCookie</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getCookie</servlet-name>
+		<url-pattern>/get-cookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>loginsessionservlet</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.LoginSessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginsessionservlet</servlet-name>
+		<url-pattern>/loginsession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>homeSession</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.HomeSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>homeSession</servlet-name>
+		<url-pattern>/homesession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>logoutsession</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.LogOutSessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutsession</servlet-name>
+		<url-pattern>/logoutsession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>forwardRequest</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.ForwardRequest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>forwardRequest</servlet-name>
+		<url-pattern>/forward</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>sendRedirect</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.SendRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendRedirect</servlet-name>
+		<url-pattern>/sendRedirect</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>includeServlet</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.IncludeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>includeServlet</servlet-name>
+		<url-pattern>/includeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>EmployeeServlet</servlet-name>
+		<servlet-class>com.tyss.webapp.servlet.EmployeeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeServlet</servlet-name>
+		<url-pattern>/EmployeeServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
